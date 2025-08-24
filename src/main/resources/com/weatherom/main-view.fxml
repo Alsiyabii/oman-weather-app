@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: #358eb8;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.weatherom.controllers.MainController">
+   <children>
+      <VBox id="mainContent" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <AnchorPane id="weatherInfoPanel" maxHeight="50.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="showMapButton" layoutX="478.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: lightgrey; -fx-padding: 3 6;" text="Show Map">
+                     <font>
+                        <Font name="STFangsong" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="settingsButton" layoutX="561.0" layoutY="9.0" minWidth="36.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="logoImageView" fitHeight="71.0" fitWidth="234.0" layoutX="204.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <HBox minHeight="400.0" prefWidth="200.0" style="-fx-padding: 20;">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <ComboBox fx:id="searchCombo" editable="true" prefWidth="200.0" promptText="Search for an Omani City" />
+                        <ListView fx:id="weatherListView" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <Region prefHeight="79.0" prefWidth="67.0" />
+                  <VBox fx:id="weatherPanelContainer" minHeight="-Infinity" prefHeight="300.0" prefWidth="350.0" />
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,67 @@
+#showMapButton {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: lightgray;
+    -fx-padding: 6 12;
+}
+
+#settingsButton {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+}
+
+#searchCombo {
+    -fx-background-radius: 15;
+    -fx-background-color: white;
+    -fx-prompt-text-fill: #999999;
+    -fx-padding: 6 12;
+    -fx-border-radius: 15;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+}
+
+#searchCombo .prompt-text {
+    -fx-font-family: Cochin;
+    -fx-font-weight: bold;
+}
+
+#searchCombo .list-view {
+    -fx-background-radius: 10;
+    -fx-background-color: white;
+}
+
+/* ListView styling */
+#weatherListView {
+-fx-background-color: transparent;
+-fx-background-insets: 0;
+-fx-border-width: 0;
+}
+
+#weatherListView .list-cell {
+-fx-background-color: transparent;
+-fx-padding: 0 0 10 0;
+-fx-border-width: 0;
+}
+
+#weatherListView .list-cell:filled:selected {
+-fx-background-color: transparent;
+}
+
+#weatherListView .list-cell:filled:hover {
+-fx-background-color: rgba(255, 255, 255, 0.1);
+-fx-background-radius: 15;
+}
+
+#weatherListView .scroll-bar:vertical {
+-fx-opacity: 0;
+-fx-pref-width: 0;
+}
+
+#weatherListView .scroll-bar:horizontal {
+-fx-opacity: 0;
+-fx-pref-height: 0;
+}
