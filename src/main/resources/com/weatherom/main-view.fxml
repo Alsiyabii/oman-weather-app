@@ -17,11 +17,6 @@
          <children>
             <AnchorPane id="weatherInfoPanel" maxHeight="50.0" prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="showMapButton" layoutX="478.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: lightgrey; -fx-padding: 3 6;" text="Show Map">
-                     <font>
-                        <Font name="STFangsong" size="13.0" />
-                     </font>
-                  </Button>
                   <Button fx:id="settingsButton" layoutX="561.0" layoutY="9.0" minWidth="36.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0">
                      <font>
                         <Font size="12.0" />

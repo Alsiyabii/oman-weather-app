@@ -41,9 +41,6 @@ public class MainController implements Initializable {
     private Button settingsButton;
 
     @FXML
-    private Button showMapButton;
-
-    @FXML
     private ImageView logoImageView;
 
     @FXML
